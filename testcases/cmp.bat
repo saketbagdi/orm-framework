@@ -1,0 +1,1 @@
+javac -d c:\orm-framework\classes -classpath c:\orm-framework\classes;. *.java

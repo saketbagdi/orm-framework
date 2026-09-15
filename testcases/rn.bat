@@ -1,0 +1,1 @@
+java -classpath c:\orm-framework\classes;c:\mysql\*;. %1
