@@ -1,1 +1,1 @@
-javac -d C:\orm-framework\classes com\orm\annotation\*.java com\orm\db\*.java com\orm\exceptions\*.java com\orm\generator\*.java
+javac -d c:\orm-framework\ -classpath c:\orm-framework\classes;. *.java

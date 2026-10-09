@@ -1,5 +1,5 @@
 package com.orm.exceptions;
-public class DatabaseException extends exception
+public class DatabaseException extends Exception
 {
 public DatabaseException(String message)
 {

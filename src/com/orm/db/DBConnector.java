@@ -27,7 +27,7 @@ line= randomAccessFile.readLine();
 splits=line.split("=");
 if(splits.length==2)
 {
-keyValues.put(splits[0].trim().toUpperCase().splits[1].trim());
+keyValues.put(splits[0].trim().toUpperCase(),splits[1].trim());
 }
 }
 randomAccessFile.close();
@@ -47,7 +47,7 @@ String server=keyValues.get("SERVER");
 if(server==null)throw new Exception("server missing in db.conf");
 Class.forName(driver);
 connection=DriverManager.getConnection(protocol+"://"+server+":"+port+"/"+database,username,password);
-}catch(Eception exception)
+}catch(Exception exception)
 {
 System.out.println(exception);
 System.exit(0);

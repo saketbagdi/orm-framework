@@ -2,20 +2,21 @@ package com.orm.db;
 public class TableColumn
 {
 private String name;
-private String Type;
+private String type;
 private int width;
 private int precision;
 private boolean isPrimaryKey;
 private boolean isNullable;
 private boolean isUnique;
 private String defaultValue;
+private boolean isAutoIncrement;
 public TableColumn()
 {
 this.name="";
 this.type="";
-this.widht=0;
+this.width=0;
 this.precision=0;
-this.PrimaryKey=false;
+this.isPrimaryKey=false;
 this.isAutoIncrement=false;
 this.isNullable=false;
 this.isUnique=false;
@@ -33,6 +34,11 @@ public void setType(java.lang.String type)
 {
 this.type=type;
 }
+public java.lang.String getType()
+{
+return this.type;
+}
+
 public void setWidth(int width)
 {
 this.width=width;
